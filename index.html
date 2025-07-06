@@ -81,6 +81,14 @@
       margin: 0 auto;
       padding: 0 1rem;
     }
+    form input, form textarea {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      width: 250px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 <body>
@@ -153,13 +161,14 @@
 
   <section id="contact">
     <h2 class="section-title">Get in Touch</h2>
-    <div style="text-align:center;">
-      <input type="text" placeholder="Name" style="padding: 0.5rem; width: 200px;"><br><br>
-      <input type="email" placeholder="Email" style="padding: 0.5rem; width: 200px;"><br><br>
-      <textarea placeholder="Message" style="padding: 0.5rem; width: 250px; height: 100px;"></textarea><br><br>
-      <button class="button">Send</button>
-      <p style="margin-top: 1rem;">📞 (438) 778-8128<br>📧 <a href="mailto:cremeandcrumbs.mtl@gmail.com">cremeandcrumbs.mtl@gmail.com</a></p>
-    </div>
+    <form action="https://formspree.io/f/xanjzbrb" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="button">Send</button>
+    </form>
+    <p style="margin-top: 1rem;">📞 (438) 778-8128<br>📧 <a href="mailto:cremeandcrumbs.mtl@gmail.com">cremeandcrumbs.mtl@gmail.com</a></p>
   </section>
 
   <footer>
@@ -171,8 +180,6 @@
       button.addEventListener('click', function(event) {
         if (this.textContent === 'Subscribe') {
           alert('Thank you for subscribing!');
-        } else if (this.textContent === 'Send') {
-          alert('Your message has been sent!');
         }
       });
     });
