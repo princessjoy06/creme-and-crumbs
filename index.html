@@ -62,12 +62,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
     }
-    footer {
-      background-color: #ffe4eb;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
     img {
       max-width: 100%;
       border-radius: 10px;
@@ -81,144 +75,73 @@
       margin: 0 auto;
       padding: 0 1rem;
     }
-    form input, form textarea {
-      margin: 0.5rem 0;
-      padding: 0.5rem;
-      width: 250px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    #success-message {
-      display: none;
+    footer {
+      background-color: #ffe4eb;
+      padding: 1rem;
       text-align: center;
-      margin-top: 1rem;
-      color: green;
-      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Crème & Crumbs</h1>
   </header>
 
   <section class="hero">
     <h2>Artisanal Cakes & Cupcakes Made with Love</h2>
-    <a class="button" href="#gallery">Shop Now</a>
-  </section>
-
-  <section>
-    <h2 class="section-title">Our Best Sellers</h2>
-    <div class="card-container">
-      <div class="card">Candy Explosion <br><img src="cake1.jpg" alt="Candy Explosion"></div>
-      <div class="card">Choco Strawberry Eclairs <br><img src="eclairs.jpg" alt="Choco Eclairs"></div>
-      <div class="card">Cupcake Bouquet <br><img src="flower-bouquet.jpg" alt="Cupcake Bouquet"></div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">Handcrafted. Custom. Delicious.</h2>
-    <div class="card-container">
-      <div class="card">Custom Cakes</div>
-      <div class="card">Cupcakes</div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">Never Miss a Crumb</h2>
-    <div style="text-align: center;">
-      <input type="email" placeholder="Your email" style="padding: 0.5rem; width: 250px;">
-      <button class="button">Subscribe</button>
-    </div>
+    <a class="button" href="#contact">Get in Touch</a>
   </section>
 
   <section>
     <h2 class="section-title">Our Story</h2>
-    <p>Crème & Crumbs was born from the warmth of a mother and daughter baking together during the quiet days of the pandemic. What began as cozy afternoons filled with flour, laughter, and love soon became a shared dream. Today, that dream lives on in every cake, every swirl of frosting, and every sweet moment we create for you.</p>
+    <p>Crème & Crumbs was born from the warmth of a mother and daughter baking together during the quiet days of the pandemic. What began as cozy afternoons filled with flour, laughter, and love turned into a passion for bringing joy to others through beautiful, handcrafted desserts.</p>
   </section>
 
   <section>
     <h2 class="section-title">Our Philosophy</h2>
-    <p>Every dessert we create is a small work of art. We believe in slow baking, seasonal flavors, and making people smile. Whether it’s a custom cake or a dozen cupcakes, we pour love and care into every crumb.</p>
+    <p>Every dessert we create is a small work of art. We believe in slow baking, seasonal flavors, and making people smile. Whether it’s a custom cake or a dozen cupcakes, we pour love and creativity into every detail.</p>
   </section>
 
   <section id="gallery">
     <h2 class="section-title">Gallery</h2>
     <div class="card-container">
-      <div class="card">Candy Explosion <br><img src="cake1.jpg" alt="Candy Explosion"></div>
-      <div class="card">Choco Strawberry Eclairs <br><img src="eclairs.jpg" alt="Eclairs"></div>
-      <div class="card">Cupcake Bouquet <br><img src="flower-bouquet.jpg" alt="Cupcake Bouquet"></div>
-      <div class="card">Jungle Theme <br><img src="jungle.jpg" alt="Jungle"></div>
-      <div class="card">Dino Cake <br><img src="dino.jpg" alt="Dino"></div>
-      <div class="card">Duck Cake <br><img src="ducks.jpg" alt="Duck"></div>
-      <div class="card">Minecraft Cake <br><img src="minecraft.jpg" alt="Minecraft"></div>
-      <div class="card">Rainbow Swirl <br><img src="rainbow.jpg" alt="Rainbow Cake"></div>
-      <div class="card">Chocolate Drip <br><img src="dripcake.jpg" alt="Drip Cake"></div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">Sweet Talk</h2>
-    <div class="card-container">
-      <div class="card">[Coming Soon]</div>
-      <div class="card">[Coming Soon]</div>
+      <div class="card">Candy Explosion<br><img src="cake1.jpg" alt="Candy Explosion"></div>
+      <div class="card">Choco Strawberry Eclairs<br><img src="eclairs.jpg" alt="Eclairs"></div>
+      <div class="card">Cupcake Bouquet<br><img src="flower-bouquet.jpg" alt="Cupcake Bouquet"></div>
+      <div class="card">Jungle Theme<br><img src="jungle.jpg" alt="Jungle"></div>
+      <div class="card">Dino Cake<br><img src="dino.jpg" alt="Dino"></div>
+      <div class="card">Duck Cake<br><img src="ducks.jpg" alt="Duck"></div>
+      <div class="card">Minecraft Cake<br><img src="minecraft.jpg" alt="Minecraft"></div>
+      <div class="card">Rainbow Swirl<br><img src="rainbow.jpg" alt="Rainbow Swirl"></div>
+      <div class="card">Chocolate Drip<br><img src="dripcake.jpg" alt="Chocolate Drip"></div>
     </div>
   </section>
 
   <section id="contact">
     <h2 class="section-title">Get in Touch</h2>
-    <form action="https://formspree.io/f/xanjzbrb" method="POST" id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Your Phone Number" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="button">Send</button>
+    <form action="https://formspree.io/f/xanjzbrb" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <input type="tel" name="phone" placeholder="Your phone number" required>
+      <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+      <button class="button" type="submit">Send</button>
     </form>
-    <div id="success-message">🎉 Thank you! We’ll get back to you soon.</div>
-    <p style="margin-top: 1rem;">📞 (438) 778-8128<br>📧 <a href="mailto:cremeandcrumbs.mtl@gmail.com">cremeandcrumbs.mtl@gmail.com</a></p>
   </section>
 
   <footer>
     &copy; 2025 Crème & Crumbs. All rights reserved.
   </footer>
 
-  <script>
-    document.querySelectorAll('.button').forEach(button => {
-      button.addEventListener('click', function(event) {
-        if (this.textContent === 'Subscribe') {
-          alert('Thank you for subscribing!');
-        }
-      });
-    });
-
-    const form = document.getElementById('contact-form');
-    const successMsg = document.getElementById('success-message');
-    
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          form.reset();
-          successMsg.style.display = 'block';
-          setTimeout(() => {
-            successMsg.style.display = 'none';
-          }, 5000);
-        } else {
-          alert('There was a problem. Please try again.');
-        }
-      }).catch(error => {
-        alert('There was a problem submitting your form.');
-      });
-    });
-  </script>
 </body>
 </html>
